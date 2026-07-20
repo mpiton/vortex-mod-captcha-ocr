@@ -1,0 +1,14 @@
+[plugin]
+name = "vortex-mod-captcha-ocr"
+version = "1.0.0"
+category = "captcha"
+author = "vortex-community"
+description = "Solves image CAPTCHAs through Vortex's typed system Tesseract broker"
+license = "GPL-3.0"
+min_vortex_version = "0.3.0"
+repository = "https://github.com/mpiton/vortex-mod-captcha-ocr"
+
+[capabilities]
+# This declaration can only unlock the host's fixed run_tesseract function
+# for a registry-verified official plugin. It never grants a generic process API.
+subprocess = ["tesseract"]
